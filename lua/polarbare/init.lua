@@ -9,7 +9,6 @@ CheckIfDotfile = function(git_dir, work_tree)
 
 	vim.fn.system(command)
 	local exit_code = vim.v.shell_error
-	print(exit_code)
 
 	if exit_code == 0 then
 		return true
