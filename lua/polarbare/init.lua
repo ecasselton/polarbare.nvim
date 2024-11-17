@@ -8,13 +8,9 @@ CheckIfDotfile = function(git_dir, work_tree)
 	local command = "/usr/bin/git --git-dir="..git_dir.." --work-tree="..work_tree.." ls-files --error-unmatch "..buf_name
 
 	vim.fn.system(command)
-	local exit_code = vim.v.shell_error
+	local isDotfile = vim.v.shell_error == 0
 
-	if exit_code == 0 then
-		return true
-	else
-		return false
-	end
+	return isDotfile
 end
 
 polarbare.setup = function(opts)
