@@ -1,11 +1,10 @@
 # Polarbare
-This is a plugin to make a bare git repository integrate more seamlessly with neovim, particularly when using one to manage your dotfiles.
-It works by checking if the current open buffer is part of the git repo you specify.
-If it is, then it sets the GIT_DIR and GIT_WORK_TREE environment variables for neovim.
+Polarbare makes it easier to use neovim when using a bare git repository to manage your dotfiles.
+It sets the GIT_DIR and GIT_WORK_TREE environment variables inside neovim.
 
 ## Installation
-Put the following in your neovim config somewhere, depending on your package manager.
-```
+Put the following in your neovim config.
+```lua
 'ecasselton/polarbare.nvim'
 ```
 
