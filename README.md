@@ -11,8 +11,7 @@ Put the following in your neovim config.
 ## Configuration
 Default configuration:
 ```lua
-require('ecasselton/polarbare.nvim').setup({
+require('polarbare').setup({
     git_dir = "~/.dotfiles",
     work_tree = "~",
 })
-```
