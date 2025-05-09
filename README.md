@@ -1,5 +1,5 @@
 # Polarbare
-A single-line plugin for managing dotfiles with a bare git repository.
+A single file plugin for managing dotfiles with a bare git repository.
 
 Polarbare sets the $GIT_DIR and $GIT_WORK_TREE environment variables inside neovim,
 so your statusline correctly displays the branch you are on.
