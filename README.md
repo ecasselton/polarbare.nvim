@@ -10,6 +10,7 @@ with Lazy
 {
     "ecasselton/polarbare.nvim", 
     lazy = true,
+    opts = {},
 }
 ```
 
@@ -31,10 +32,7 @@ with Pckr
 }
 ```
 
-## Configuration
-Remember to call setup!
-
-Default options:
+## Default options
 ```lua
 require('polarbare').setup({
     git_dir = "~/.dotfiles",
